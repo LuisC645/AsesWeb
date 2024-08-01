@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club ASES</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+
+                <a href="index.html" class="logo">
+                    <img class="img_logo" src="img/logo.png" alt="logo">
+                </a>
+
+                <a href="index.html" class="logo_user">
+                    <img src="img/logoFecna.png" alt="user" class="img_userLogo">
+                </a>
+            </div>
+
+            <nav>
+                <ul class="navegacion">
+                    <li><a href="natacion.html" class="navegacion__enlace txt_nav-rend">Natación</a></li>
+                    <li><a href="atletismo.html" class="navegacion__enlace">Atletismo</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="contenedor">
+        <h1 class="contenedor__titulo">Programa de rendimiento Atletismo</h1>
+        <a href="index_atletismo.html" class="base_datos">
+            <h1>Base de Datos</h1>
+        </a>
+        <div class="contenedor_columnas">
+
+            <div class="contenedor_columna">
+                <h2 class="titulo_columna">Datos</h2>
+
+                <div class="contenedor_datos">
+                    <p class="texto_datos">Edad: </p>
+                    <input type="number" class="input_datos input_edad" placeholder="Ingresa la edad">
+                </div>
+
+                <div class="contenedor_datos">
+                    <p class="texto_datos">Sexo: </p>
+                    <select class="input_datos input_sexo" id="selectorGenero">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                </div>
+
+                <h2 class="titulo_columna">Distancia</h2>
+            
+
+                <div class="contenedor_datos">
+                    <p class="texto_datos">Distancia:</p>
+                    <select class="input_datos input_distancia" id="selectorDistancia">
+                        <option value="100">100 metros</option>
+                        <option value="200">200 metros</option>
+                        <option value="400">400 metros</option>
+                        <option value="800">800 metros</option>
+                        <option value="1000">1 Kilometros</option>
+                        <option value="1500">1.5 Kilometros</option>
+                        <option value="2000">2 Kilometros</option>
+                        <option value="5000">5 Kilometros</option>
+                        <option value="10000">10 Kilometros</option>
+                        <option value="21000">21 Kilometros</option>
+                    </select>
+                </div>
+
+                <h2 class="titulo_columna">Tiempo 100%</h2>
+
+                <div class="contenedor_datos">
+                    <p class="texto_datos">Minutos:</p>
+                    <input type="number" class="input_datos input_m100" placeholder="Ingresa minutos">
+                </div>
+
+                <div class="contenedor_datos">
+                    <p class="texto_datos">Segundos: </p>
+                    <input type="number" class="input_datos input_s100" placeholder="Ingresa segundos">
+                </div>
+
+                <button class="boton" id="btnGuardar">Ingresar</button>
+
+
+            </div>
+
+            <!-- COLUMNA 2 -->
+
+            <div class="contenedor_columna">
+                <div class="casillas_Obj">
+                    <h2 class="titulo_columna">Objetivo</h2>
+
+                    <div class="contenedor_datos">
+                        <p class="texto_datos">Minutos:</p>
+                        <input type="number" class="input_datos input_mObj" placeholder="Ingresa minutos">
+                    </div>
+
+                    <div class="contenedor_datos">
+                        <p class="texto_datos">Segundos: </p>
+                        <input type="number" class="input_datos input_sObj" placeholder="Ingresa segundos">
+                    </div>
+
+                    <button class="boton" id="btnGuardar_Obj">Ingresar</button>
+                </div> 
+
+                <div class="contenidoMostrado" id="contenido_mostrado"></div>
+
+            </div>
+
+            <!-- COLUMNA 3 -->
+
+            <div class="contenedor_columna">
+                <h2 class="titulo_columna titulo_c3">Parciales</h2>
+            
+                <div class="titulos_c3_alt">
+                    <div class="txt_dist_alt" id="contenido_distancia"></div>    
+                </div>
+
+                <div class="contenidoMostrado content_c3" id="contenido_parciales">
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="js/functionsAtl.js"></script>
+
+</body>
+<footer class="footer">
+    
+    <div class="footer_ases">
+        <p class="footer__texto">Ases Club de Natacion</p>
+        <div class="redes_ases">
+            <a href="https://www.facebook.com/ases.escueladeportiva" class="logoF">
+                <img src="img/logoFb.png" alt="logoFB.png">
+            </a>
+            <a href="https://wa.me/573223108050" class="logoW">
+                <img src="img/logoW.webp" alt="logoW.png">
+            </a>
+        </div>
+    </div>
+    <div class="derechos">
+        <p class="txt_derechos">Derechos Reservados 2023 ®</p>
+    </div>
+    <div class="footer_me">
+        <div class="redes_me">
+            <a href="mailto:luisandres645@gmail.com" class="redes">
+                <i class="fas fa-envelope"></i>
+                <p>luisandres645@gmail.com</p>
+            </a>
+            <br>
+            <a href="#" class="redes">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> Medellín - Antioquia, 2023</p>
+            </a>
+            <br>
+            <a href="https://www.linkedin.com/in/luis-castillo-chicaiza-326221181/" class="redes">
+                <i class="fab fa-linkedin"></i>
+                <p>Linkedin.com</p>
+            </a>
+        </div>
+    </div>
+
+</footer>
+</html>

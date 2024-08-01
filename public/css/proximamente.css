@@ -1,0 +1,25 @@
+body{
+    background-image: url('../img/fondoLogin.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+.fa-solid{
+    font-size: 3rem;
+    color: white;   
+}
+.fa-solid:hover{
+    color: red;
+}

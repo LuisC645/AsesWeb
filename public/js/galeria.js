@@ -1,0 +1,1 @@
+//falta ampliar fotos cuando se de click

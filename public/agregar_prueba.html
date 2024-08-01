@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Club ASES</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/agregar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+<body>
+    <form id="formulario">
+
+        <h3 class="titulo_formulario">Ingresa Prueba</h3>
+
+        <label for="competencia">Competencia:</label>
+        <select class="competencias" id="competencia" >
+            <option value="">Seleccione</option>
+        </select>
+        <br>
+        <label for="deportista">Deportista:</label>
+        <select class="competencias" id="documento" >
+            <option value="">Seleccione</option>
+        </select>
+        <br>
+        <label for="prueba">Prueba:</label>
+        <select class="competencias" id="prueba" >
+            <option value="">Seleccione</option>
+            <option value="25 Patada Libre">25 Patada Libre</option>
+            <option value="25 Patada Espalda">25 Patada Espalda</option>
+            <option value="25 Patada Mariposa">25 Patada Mariposa</option>
+            <option value="25 Patada Pecho">25 Patada Pecho</option>
+
+            <option value="25 Libre">25 libre</option>
+            <option value="25 Espalda">25 Espalda</option>
+            <option value="25 Mariposa">25 Mariposa</option>
+            <option value="25 Pecho">25 Pecho</option>
+
+            <option value="50 Libre">50 libre</option>
+            <option value="50 Espalda">50 Espalda</option>
+            <option value="50 Mariposa">50 Mariposa</option>
+            <option value="50 Pecho">50 Pecho</option>
+
+            <option value="100 Libre">100 libre</option>
+            <option value="100 Espalda">100 Espalda</option>
+            <option value="100 Pariposa">100 Mariposa</option>
+            <option value="100 Pecho">100 Pecho</option>
+
+            <option value="200 Libre">200 libre</option>
+            <option value="200 Espalda">200 Espalda</option>
+            <option value="200 Mariposa">200 Mariposa</option>
+            <option value="200 Pecho">200 Pecho</option>
+
+            <option value="400 Libre">400 libre</option>
+            <option value="800 Libre">800 libre</option>
+            <option value="1500 Libre">1500 libre</option>
+
+            <option value="200 Combinado">200 combinado</option>
+            <option value="400 Combinado">400 combinado</option>
+        </select>
+        <br>
+        <label for="tiempo">Tiempo:</label>
+        <input type="text" id="tiempo" name="tiempo" placeholder="Ingresa" required>
+        <br>
+        <label for="observaciones">Observaciones:</label>
+        <input type="text" id="observaciones" name="observaciones" placeholder="Ingresa" required>
+        <br>
+        
+        <button type="submit" class="btn">Enviar</button>
+
+        <a href="deportistas.html" class="volver_atras">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+        </a>
+    
+
+    </form> 
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/agregar_Prueba.js"></script>
+
+</body>
+</html>

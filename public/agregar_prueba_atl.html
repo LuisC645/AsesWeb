@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Club ASES</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/agregar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+<body>
+    <form id="formulario">
+
+        <h3 class="titulo_formulario">Ingresa Prueba</h3>
+
+        <label for="competencia">Competencia:</label>
+        <select class="competencias" id="competencia" >
+            <option value="">Seleccione</option>
+        </select>
+        <br>
+        <label for="deportista">Deportista:</label>
+        <select class="competencias" id="documento" >
+            <option value="">Seleccione</option>
+        </select>
+        <br>
+        <label for="prueba">Prueba:</label>
+        <select class="competencias" id="prueba" >
+            <option value="">Seleccione</option>
+
+            <option value="100 Metros">100 Metros</option>
+            <option value="200 Metros">200 Metros</option>
+            <option value="400 Metros">400 Metros</option>
+            <option value="800 Metros">800 Metros</option>
+            <option value="1 Kilometro">1 Kilometro</option>
+            <option value="1.5 Kilometros">1.5 Kilometros</option>
+            <option value="2 Kilometros">2 Kilometros</option>
+            <option value="5 Kilometros">5 Kilometros</option>
+            <option value="10 Kilometros">10 Kilometros</option>
+            <option value="21 Kilometros">21 Kilometros</option>
+            
+        </select>
+        <br>
+        <label for="tiempo">Tiempo:</label>
+        <input type="text" id="tiempo" name="tiempo" placeholder="Ingresa" required>
+        <br>
+        <label for="observaciones">Observaciones:</label>
+        <input type="text" id="observaciones" name="observaciones" placeholder="Ingresa" required>
+        <br>
+        
+        <button type="submit" class="btn">Enviar</button>
+
+        <a href="index_atletismo.html" class="volver_atras">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+        </a>
+    
+
+    </form> 
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/agregar_prueba_atl.js"></script>
+
+</body>
+</html>

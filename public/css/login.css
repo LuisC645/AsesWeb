@@ -1,0 +1,86 @@
+:root{
+    --blanco: #fff;
+    --negro: #000;
+    --primario: #F2F2F2;
+    --secundario: #0487D9;
+
+    --fuentePrincipal: sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/**Globales**/
+body{
+    background-image: url('../img/fondoLogin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+
+/*Ventana Login*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blanco);
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px black;
+}
+form .title{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #21618C;
+}
+
+form label{
+    margin-bottom: 30px;
+}
+form label .fa-solid{
+    font-size: 20px;
+    color: #21618C;
+    margin-right: 10px;
+}
+form label input{
+    outline: none;
+    border: none;
+    color: blue;
+    border-bottom: solid 2px black;
+    padding: 0 5px;
+    font-size: 18px;
+}
+form label input::placeholder{
+    color: rgba(37, 37,37, 0.5);
+}
+form .butt{
+    color: var(--blanco);
+    border: none;
+    background-image: radial-gradient(circle at 50% 50%, #5780f6 0, #3c78f2 50%, #0070ee 100%);
+    padding: 10px 15px;
+    cursor:pointer;
+    font-size: 25px;
+    margin-bottom: 1rem;
+
+}

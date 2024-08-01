@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club ASES</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/deportistas.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+    
+<header class="header">
+
+    <div class="contenedor">
+        <div class="barra">
+
+            <a href="index.html" class="logo">
+                <img class="img_logo" src="img/logo.png" alt="logo">
+            </a>
+
+            <a href="index.html" class="logo_user">
+                <img src="img/logoFecna.png" alt="user" class="img_userLogo">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="navegacion">
+                <li><a href="natacion.html" class="navegacion__enlace txt_nav-rend">Natación</a></li>
+                <li><a href="atletismo.html" class="navegacion__enlace">Atletismo</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+<body>
+
+    <h1 class="contenedor__titulo">Base de datos Natación</h1>
+
+
+    <main class="contenedor">
+        <div class="contenedor_columnas">
+
+            <!-- COLUMNA 1 -->
+            <div class="contenedor_columna">
+
+                <h3 class="titulo_formulario">Buscar deportista</h3>
+
+                <form id="formulario" class="formulario">
+                    <label for="documento">Deportista:</label>
+                    <br>
+                    <select name="documento" id="documento">
+                        <option value="">Selecciona un Deportista</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <h3 class="titulo_formulario">Competencias</h3>
+
+                    <label for="competencia">Seleccione Competencia:</label>
+                    <br>
+                    <select class="competencias" id="seleccion" >
+                        <option value="">Seleccione</option>
+                    </select>
+                    <br>
+                    <button class="boton" type="submit">Enviar</button>
+                    <br>
+                </form>    
+                <form id="formulario_distancia" class="formulario">
+                    <label for="competencia">Seleccione Prueba:</label>
+                    <br>
+                    <select class="competencias" id="pruebas" >
+                        <option value="">Seleccione</option>
+                    </select>
+                    <button class="boton" type="submit">Enviar</button>
+                    <br>
+                </form>
+                
+
+                <h3 class="titulo_formulario">Agregar</h3>
+
+                <div class="contenedor_logos">
+
+
+                    <a href="agregar_deportista.html" class="agregar_deportista">
+                        <img src="img/agregar-usuario.png" alt="agregar_deportista" class="icono_agregar_deportista">
+                        <p class="txt_deportista">Deportista</p>
+                    </a>
+                    <a href="agregar_competencia.html" class="agregar_competencia">
+                        <img src="img/boton-mas.png" alt="agregar_comp" class="icono_agregar_competencia">
+                        <p class="txt_competencia">Competencia</p>
+                    </a>
+                    <a href="agregar_prueba.html" class="agregar_prueba">
+                        <img src="img/nadar.png" alt="agregar_prueba" class="icono_agregar_prueba">
+                        <p class="txt_prueba">Prueba</p>
+                    </a>
+                </div>
+                
+
+            </div>
+
+            <!-- COLUMNA 2 -->
+            <div class="contenedor_columna">
+
+                <h3 class="titulo_Datos">Datos</h3>
+                <br>
+                <p class="datos" id="datos_deportista"></p>
+
+            </div>
+
+            <!-- COLUMNA 3 -->
+
+            <div class="contenedor_columna">
+
+                <h3 class="titulo_Datos">Competencia</h3>
+                <br>
+                <div class="datos" id="datos_competencia"></div>
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+<footer class="footer">
+    
+    <div class="footer_ases">
+        <p class="footer__texto">Ases Club de Natacion</p>
+        <div class="redes_ases">
+            <a href="https://www.facebook.com/ases.escueladeportiva" class="logoF">
+                <img src="img/logoFb.png" alt="logoFB.png">
+            </a>
+            <a href="https://wa.me/573223108050" class="logoW">
+                <img src="img/logoW.webp" alt="logoW.png">
+            </a>
+        </div>
+    </div>
+    <div class="derechos">
+        <p class="txt_derechos">Derechos Reservados 2023 ®</p>
+    </div>
+    <div class="footer_me">
+        <div class="redes_me">
+            <a href="mailto:luisandres645@gmail.com" class="redes">
+                <i class="fas fa-envelope"></i>
+                <p>luisandres645@gmail.com</p>
+            </a>
+            <br>
+            <a href="#" class="redes">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> Medellín - Antioquia, 2023</p>
+            </a>
+            <br>
+            <a href="https://www.linkedin.com/in/luis-castillo-chicaiza-326221181/" class="redes">
+                <i class="fab fa-linkedin"></i>
+                <p>Linkedin.com</p>
+            </a>
+        </div>
+    </div>
+
+</footer>
+</html>

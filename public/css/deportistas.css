@@ -1,0 +1,501 @@
+:root{
+    --blanco: #fff;
+    --negro: #000;
+    --primario: #F2F2F2;
+    --secundario: #0487D9;
+
+    --fuentePrincipal: 'Rubik', sans-serif;;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/**Globales**/
+body{
+    background-color: #D6EAF8;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+}
+h1{
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+/**header*/
+.header{
+    background-image: url('../img/fondoHeader.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-position: center center;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);*/
+}
+.header_texto{
+    text-align: center;
+    color:var(--blanco);
+}
+@media (min-width: 1030px){
+    /*Header Pc*/
+    header{
+        height: 15rem;
+    }
+    .header_texto{
+        margin-top: -10rem;
+    }
+    .header_texto-p{
+        margin-top: -1rem;
+        font-weight: bold;
+    }
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .img_logo{
+        width: 14rem;
+        margin-top: 1.5rem;
+    }
+    .img_userLogo{
+        width: 7rem;
+        margin-top: 2rem;
+    }
+    .navegacion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -7rem;
+        gap: 10rem
+    }
+    .navegacion li{
+        list-style: none;
+    }
+    .navegacion li a{
+        color:var(--blanco);
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 1030px){
+
+    /*Main*/
+    .contenedor_titulo{
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    /* Header cel */
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .img_logo{
+        margin-top: 1.5rem;
+        margin-left: 3rem;
+        width: 8rem;
+        font-size: 1rem;
+    }
+    .img_userLogo{
+        margin-top: 2rem;
+        width: 4rem;
+        margin-right: 3rem;
+    }
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-top: -3rem;
+        margin-left: -4rem;
+    }
+    .navegacion li{
+        list-style: none;
+    }
+    .navegacion li a{
+        color:var(--blanco);
+        font-size: 2rem;
+    }
+    .header li{
+        margin: 0 0 1.2rem 0;
+    }
+}
+
+.navegacion__enlace{
+    font-size: 3rem;
+    font-family: var(--fuentePrincipal);
+    color: var(--negro)
+}
+.navegacion__enlace:hover{
+    color:var(--secundario);
+}
+
+/*header*/
+@media (min-width: 1030px){
+    .header{
+        height: 15rem;
+    }
+    .header_texto{
+        margin-top: -10rem;
+    }
+    .header_texto-p{
+        margin-top: -1rem;
+        font-weight: bold;
+    }
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .img_logo{
+        width: 14rem;
+        margin-top: 1.5rem;
+    }
+    .img_userLogo{
+        width: 7rem;
+        margin-top: 2rem;
+    }
+}
+
+/*main*/
+.contenedor_columnas{
+    display: flex;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario label, input, .boton, select{
+    font-family: var(--fuentePrincipal);
+}
+.boton, .formulario input, .competencias, select{
+    border: 2px solid var(--negro);
+    border-radius: 1rem;
+}
+/*Pc*/
+@media (min-width: 1030px){
+    .contenedor_columnas{
+        justify-content: space-between;
+        padding: 0 5rem 0 5rem; 
+    }
+    .contenedor_columna{
+        flex: 1;
+    }
+    .formulario label{
+        font-family: var(--fuentePrincipal);
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: -0.5rem;
+    }
+    .formulario input{
+        font-size: 1.5rem;
+        width: 80%;
+        text-align: center;
+    }
+    .formulario select{
+        font-size: 1.5rem;
+        width: 80%;
+        text-align: center;
+    }
+    .boton{
+        font-size: 1.5rem;
+        margin-top: -1rem;
+        width: 50%;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+    .icono_agregar_deportista{
+        width: 5rem;
+        margin-top: 1rem;
+        margin-bottom: -0.5rem;
+    }
+    .icono_agregar_competencia{
+        width: 5rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .icono_agregar_prueba{
+        width: 7.5rem;
+    }
+    .txt_deportista{
+        font-family: var(--fuentePrincipal);
+        font-size: 1rem;
+        margin-left: -0.5rem;
+        margin-top: 0rem;
+        color: var(--negro);
+    }
+    .txt_competencia{
+        font-family: var(--fuentePrincipal);
+        font-size: 1rem;
+        margin-left: -0.8rem;
+        margin-top: -3.5rem;
+        color: var(--negro);
+    }
+    .txt_prueba{
+        font-family: var(--fuentePrincipal);
+        font-size: 1rem;
+        margin-left: 1rem;
+        margin-top: -0.5rem;
+        color: var(--negro);
+    }
+    .agregar_competencia{
+        margin-left: 2.5rem;
+    }
+    .competencias{
+        width: 80%;
+        margin-bottom: 1.9rem;
+    }
+    .contenedor_logos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .icono_agregar_prueba_atl{
+        width: 5rem;
+        margin-top: 1rem;
+    }
+
+    /*Columna2*/
+    .datos{
+        font-family: var(--fuentePrincipal);
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+    
+
+}
+
+/*cel*/
+@media (max-width: 1030px){
+    .contenedor_columnas{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 5rem 0 5rem; 
+    }
+    .contenedor_columna{
+        flex: 1;
+    }
+    .formulario label{
+        font-family: var(--fuentePrincipal);
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: -0.5rem;
+    }
+    .formulario input{
+        font-size: 1.5rem;
+        width: 80%;
+        text-align: center;
+    }
+    .formulario select{
+        font-size: 1.5rem;
+        width: 80%;
+        text-align: center;
+    }
+    .boton{
+        font-size: 1.7rem;
+        margin-top: -1rem;
+        width: 50%;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+    .icono_agregar_deportista{
+        width: 5rem;
+        margin-top: 1rem;
+        margin-bottom: -0.5rem;
+    }
+    .icono_agregar_competencia{
+        width: 5rem;
+        margin-bottom: -4.6rem;
+        margin-left: 3rem;
+    }
+    .icono_agregar_prueba{
+        width: 7rem;
+    }
+    .txt_deportista{
+        font-family: var(--fuentePrincipal);
+        font-size: 1rem;
+        margin-left: -0.4rem;
+        margin-top: 0.3rem;
+        color: var(--negro);
+    }
+    .txt_competencia{
+        font-family: var(--fuentePrincipal);
+        font-size: 1rem;
+        margin-left: 2rem;
+        margin-top: 4.2rem;
+        color: var(--negro);
+    }
+    .txt_prueba{
+        font-family: var(--fuentePrincipal);
+        font-size: 1rem;
+        margin-left: 1rem;
+        margin-top: -1.2rem;
+        color: var(--negro);
+    }
+    .competencias{
+        font-size: 2rem;
+        width: 80%;
+        margin-bottom: 1.9rem;
+    }
+    .contenedor_logos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    /*Columna2*/
+    .datos{
+        font-family: var(--fuentePrincipal);
+        font-size: 2rem;
+        text-align: center;
+        margin-top: -0.5rem;
+        margin-bottom: 3rem;
+    }
+    .icono_agregar_prueba_atl{
+        width: 4.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+}
+
+/**footer*/
+footer{
+    background-color: #1B4F72;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    align-items: center;    
+    gap: 0;
+}
+footer .footer_ases, footer .footer_me, .derechos{
+    color: white;
+}
+
+@media (min-width: 1030px){
+    footer{
+        justify-content: space-around;
+    }
+}
+@media (max-width: 1030px){
+    footer{
+        flex-direction: column;
+    }
+    .derechos{
+        order:1;
+    }
+    .footer_ases, .footer_me{
+        order:2;
+    }
+    .derechos{
+        margin-bottom: -2rem;
+    }
+    .footer_ases{
+        margin-bottom: 1rem;
+    }
+    .footer_me{
+        margin-bottom: 1rem;
+    }
+
+}
+
+/*footer_Ases*/
+footer{
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+footer .footer_ases{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.redes_ases{
+    display: flex;
+    align-items: center;
+    margin-top: -2rem;
+}
+.logoF img{
+    width: 2.3rem;
+}
+.logoW img{
+    width: 4rem;
+} 
+.footer_ases p{
+    
+    font-size: 1.5rem;
+}
+
+/*Derechos*/
+.derechos p{
+    font-size: 1.5rem;
+}
+
+/*footer_me*/
+footer .footer_me .redes_me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    padding: 0rem;
+}
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redes_me a i{
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 0.3rem ;
+}
+.redes_me a p{
+    font-size: 1rem;
+    color: white;
+    margin: 0rem;
+    margin-top: 0.1rem;
+}
+.redes_me a p, .redes_me a i{
+    margin: -2rem 0.3rem;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Club ASES</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/agregar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+<body>
+    <form id="formulario">
+
+        <h3 class="titulo_formulario">Ingresa Deportista</h3>
+
+        <label for="documento">Documento:</label>
+        <input type="text" id="documento" name="documento" placeholder="Ingresa" required>
+        <br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa" required>
+        <br>
+        <label for="nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="nacimiento" name="nacimiento" placeholder="Ingresa" required>
+        <br>
+        <label for="peso">Peso:</label>
+        <input type="text" id="peso" name="peso" placeholder="Ingresa" required>
+        <br>
+        <label for="altura">Altura:</label>
+        <input type="number" id="altura" name="altura" placeholder="Ingresa" required>
+        <br>
+        <label for="rh">Rh:</label>
+        <input type="text" id="rh" name="rh" placeholder="Ingresa" required>
+        <br>
+        <label for="patologias">Patologias:</label>
+        <input type="text" id="patologias" name="patologias" placeholder="Ingresa" required>
+        <br>
+        
+        <button type="submit" class="btn">Enviar</button>
+
+        <a href="index_atletismo.html" class="volver_atras">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+        </a>
+    
+
+    </form> 
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/agregar_dep_atl.js"></script>
+    
+</body>
+</html>
